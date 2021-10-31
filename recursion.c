@@ -1,21 +1,21 @@
-#include<stdio.h>
-int facto(int);
-void main()
-{
-    int n;
-    int c;
-    scanf("%d", &n);
-    c=facto(n);
-    printf("%d", c);
-}
-int facto(int n)
-{
-    if(n<=1)
-    {
-        return(1);
-    }
-    else
-    {
-        return(n*facto(n-1));
-    }
-}
+#include<stdio.h>  
+  
+long factorial(int n)  
+{  
+  if (n == 0)  
+    return 1;  
+  else  
+    return(n * factorial(n-1));  
+}  
+   
+void main()  
+{  
+  int number;  
+  long fact;  
+  printf("Enter a number: ");  
+  scanf("%d", &number);   
+   
+  fact = factorial(number);  
+  printf("Factorial of %d is %ld\n", number, fact);  
+  return 0;  
+}  
