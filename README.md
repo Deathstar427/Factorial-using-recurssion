@@ -1,2 +1,3 @@
-# Finding-Factorial-using-recurssion
-finding factorial of a number using recurssion
+# Factorial using Recursion
+The code calculates the factorial of a number using recursion
+
